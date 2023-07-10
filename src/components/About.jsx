@@ -13,7 +13,8 @@ export default function Intro() {
             With over five years of industry experience, 
             I have successfully delivered numerous projects, both remotely and onsite. 
             My technical skills allowing me to create stunning and user-friendly interfaces.
-             I am also well-versed in backend technologies like Node.js and REST APIs, enabling seamless collaboration with backend developers. With a Google Management Certificate under my belt, I possess the leadership and project management skills necessary to drive successful outcomes.
+             I am also well-versed in backend technologies like Node.js and REST APIs, enabling seamless collaboration with backend developers.
+              With a Google Management Certificate under my belt.
             </Typography>
         </Box>
     );

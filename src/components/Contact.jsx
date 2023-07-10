@@ -11,7 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { Phone } from '@mui/icons-material';
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 export default function Intro() {
@@ -37,6 +37,10 @@ export default function Intro() {
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.open(mailtoLink);
     };
+    const handleLinkedinClick = () => {
+        window.open("https://www.linkedin.com/in/mahnoor-hassan-rana-5b683715b", '_blank');
+        // window.location.href = `www.linkedin.com/in/mahnoor-hassan-rana-5b683715b`;
+    };
 
     return (
         <Box sx={{ mt: spacerValue }}>
@@ -59,6 +63,9 @@ export default function Intro() {
                 </IconButton>
                 <IconButton color="primary" onClick={handleEmailClick}>
                     <EmailIcon />
+                </IconButton>
+                <IconButton color="secondary" onClick={handleLinkedinClick}>
+                    <LinkedInIcon />
                 </IconButton>
             </Stack>
         </Box>

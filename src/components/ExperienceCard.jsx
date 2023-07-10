@@ -36,7 +36,7 @@ export default function ExperienceCard(props) {
          {link ?
         <Typography variant="body2">
          
-          <Link href={link} underline="none" target='blank'>Certificate Link</Link>
+          <Link href={link} underline="none" target='blank'>Certificate here</Link>
         </Typography>
         :""}
       </CardContent>
