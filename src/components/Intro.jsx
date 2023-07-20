@@ -12,7 +12,7 @@ export default function Intro() {
                 Hello, I'm Mahnoor!
             </Typography>
             <Typography variant="subtitle1" color="text.secondary" align="center">
-                Senior Front End Developer
+                Project Assistant | Senior Frontend Engineer 
             </Typography>
         </Box>
     );

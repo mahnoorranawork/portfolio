@@ -12,7 +12,9 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { Phone } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
+import Resume from '@assets/static/file/mahnoorresume.pdf'
 
 export default function Intro() {
     const theme = useTheme();
@@ -41,6 +43,10 @@ export default function Intro() {
         window.open("https://www.linkedin.com/in/mahnoor-hassan-rana-5b683715b", '_blank');
         // window.location.href = `www.linkedin.com/in/mahnoor-hassan-rana-5b683715b`;
     };
+    const handleGithubClick = () => {
+        window.open("https://github.com/mahnoorranawork", '_blank');
+    };
+  
 
     return (
         <Box sx={{ mt: spacerValue }}>
@@ -66,6 +72,16 @@ export default function Intro() {
                 </IconButton>
                 <IconButton color="secondary" onClick={handleLinkedinClick}>
                     <LinkedInIcon />
+                </IconButton>
+                <IconButton color="black" onClick={handleGithubClick}>
+                    <GitHubIcon />
+                </IconButton>
+                <IconButton color="primary" >
+                <a
+                href={Resume}
+                download>
+                <SimCardDownloadIcon color="primary" />
+                </a>
                 </IconButton>
             </Stack>
         </Box>

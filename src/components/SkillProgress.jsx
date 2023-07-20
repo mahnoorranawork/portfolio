@@ -12,9 +12,9 @@ const Skill = ({ label, value, icon, marginBottom }) => {
       <Typography variant="body1" component="span" sx={{ flexShrink: 0 }}>
         {label}
       </Typography>
-      <Box sx={{ width: '100%', marginLeft: 2 }}>
+      {/* <Box sx={{ width: '100%', marginLeft: 2 }}>
         <LinearProgress variant="determinate" value={value} color="primary" />
-      </Box>
+      </Box> */}
     </Box>
   );
 };
